@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,41 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <main>
         <h1>Tabela IMC</h1>
         <aside>
-            <h2>IMC</h2>
-            <ul>
-                <li>Menos do que 18,5</li>
-                <li>Entre 18,5 e 24,9</li>
-                <li>Entre 25 e 29,9</li>
-                <li>Entre 30 e 34,9</li>
-                <li>Entre 35 e 39,9</li>
-                <li>Mais do que 40</li>
-            </ul>
-            <h2>Resultado</h2>
-            <ul>
-                <li>Abaixo do peso</li>
-                <li>Peso normal</li>
-                <li>Sobrepeso</li>
-                <li>Obesidade grau 1</li>
-                <li>Obesidade grau 2</li>
-                <li>Obesidade grau 3</li>
-            </ul>
+                <table class="container-grid">
+                    <thead>
+                        <td>IMC</td>
+                        <td>Resultado</td>
+                    </thead>
+                    <tr>
+                        <td>Menos do que 18,5</td>
+                        <td>Abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18,5 e 24,9</td>
+                        <td>Peso normal</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25 e 29,9</td>
+                        <td>Sobrepeso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30 e 34,9</td>
+                        <td>Obesidade grau 1</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 35 e 39,9</td>
+                        <td>Obesidade grau 2</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade grau 3</td>
+                        <td>Mais do que 40</td>
+                    </tr>
+                </table>
         </aside>
         <h1>Calcule seu IMC:</h1>
         <p>Peso</p>
@@ -43,6 +57,7 @@
         <button class="button-calculate" onclick="
         efetuarCalculo();
         ">Calcular</button>
-    </main> 
+    </main>
 </body>
+
 </html>

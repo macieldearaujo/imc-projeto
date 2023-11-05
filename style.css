@@ -29,13 +29,30 @@ main {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.37);
 }
 h1 {
+    text-align: center;
     font-size: 2em;
     margin: 20px 0px 20px 0px;
 }
 
 aside {
-    columns: 2;
     margin-top: 15px;
+}
+
+thead {
+    font-weight: bold;
+}
+
+.container-grid {
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    text-indent: 5px;
+    font-family: 'Open-sans', arial;
+}
+
+.container-grid tbody tr:nth-child(odd) {
+    background-color: rgb(204, 204, 204);
 }
 
 .input-values {
@@ -51,8 +68,12 @@ aside {
 }
 
 ul {
-    margin-top: 10px;
     list-style-type: none;
+}
+
+li {
+    margin-top: 3px;
+    padding: 2px;
 }
 
 p {
